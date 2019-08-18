@@ -288,7 +288,7 @@ namespace OrchardCore.DisplayManagement
     /// </summary>
     public sealed class StringBuilderPool : IDisposable
     {
-        private const int DefaultCapacity = 16 * 1024;
+        private const int DefaultCapacity = 1 * 1024;
 
         // global pool
         private static readonly ObjectPool<StringBuilderPool> s_poolInstance = CreatePool();
