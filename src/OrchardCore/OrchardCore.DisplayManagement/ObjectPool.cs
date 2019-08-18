@@ -293,7 +293,7 @@ namespace OrchardCore.DisplayManagement
         // global pool
         private static readonly ObjectPool<StringBuilderPool> s_poolInstance = CreatePool();
 
-        public readonly StringBuilder Builder = new StringBuilder(DefaultCapacity);
+        public readonly StringBuilder Builder = new StringBuilder();
         private readonly ObjectPool<StringBuilderPool> _pool;
 
         private StringBuilderPool(ObjectPool<StringBuilderPool> pool)
